@@ -28,7 +28,7 @@ public class Game {
 	@Column(columnDefinition = "TEXT") //Aceita mais caracteres que o VAR CHAR 255 no Banco.
 	private String shortDescription;
 	
-	@Column(columnDefinition = "TEXT")
+	@Column(columnDefinition = "TEXT") 
 	private String longDescription;
 	
 	public Game() {
