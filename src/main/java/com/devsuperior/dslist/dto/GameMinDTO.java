@@ -14,7 +14,7 @@ public class GameMinDTO {
 		
 	}
 
-	public GameMinDTO(Game entity) { //Recebe os argumentos da entidade Game
+	public GameMinDTO(Game entity) { //Recebe os argumentos da entidade Game		
 		
 		id = entity.getId();
 		title = entity.getTitle();

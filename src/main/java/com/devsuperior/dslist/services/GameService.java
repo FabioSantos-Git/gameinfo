@@ -15,9 +15,9 @@ import com.devsuperior.dslist.repositories.GameRepository;
 public class GameService {
 
 	@Autowired
-	private GameRepository gameRepository; // injetando o GameReposytory
+	private GameRepository gameRepository; // injetando o GameRepository
 
-	@Transactional(readOnly = true) // Garante que a trasação com o banco seja garantida
+	@Transactional(readOnly = true) // Garante que a transação com o banco seja garantida
 	public GameDTO findById(Long id) {
 		Game result = gameRepository.findById(id).get();
 		return new GameDTO(result);
